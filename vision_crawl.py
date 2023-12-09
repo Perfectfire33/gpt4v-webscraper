@@ -56,6 +56,7 @@ while True:
 
         exitcode = result.returncode
         output = result.stdout
+        print("ExitCode: " + str(exitcode))
 
         if not os.path.exists("screenshot.jpg"):
             print("ERROR: Trying different URL")

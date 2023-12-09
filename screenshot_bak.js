@@ -1,13 +1,6 @@
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
-
-//const puppeteer = import('puppeteer-extra');
-//const StealthPlugin = import('puppeteer-extra-plugin-stealth');
-
-//StealthPlugin.onBrowser = () => {};
 puppeteer.use(StealthPlugin());
-
-//puppeteer.use(StealthPlugin());
 
 const url = process.argv[2];
 const timeout = 8000;
